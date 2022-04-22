@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../styles/style.css">
+    <title>iVcera</title>
+</head>
+<body>
+    {{>header}}
+    <main>
+        <h2>Muj profil</h2>
+    <p>Uzivatelske jmeno: {{user.username}}</p>
+    <p>Email: {{user.email}}</p>
+
+    <p>
+        <a class="link-as-button" href="/users/me/delete">Smaz uzivatele</a>
+        <a class="link-as-button" href="/users/me/update">Aktualizuj uzivatele</a>
+    </p>
+    </main>
+    {{>footer}}
+</body>
+</html>

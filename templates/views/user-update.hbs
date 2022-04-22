@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../styles/style.css">
+    <title>iVcera</title>
+</head>
+<body>
+    {{>header}}
+    <main>
+        <h2>Aktualizuj uzivatele</h2>
+        <form action="/users/me/update?_method=PATCH" method="post">
+            <label for="name">Jméno:</label><br>
+            <input type="text" name="name" id="name" disabled value="{{user.username}}"><br><br>
+
+            <label for="email">Login (email):</label><br>
+            <input type="email" name="email" id="email"  value="{{user.email}}"><br><br>
+
+            <label for="password">Heslo:</label><br>
+            <input type="password" name="password" id="password" required placeholder="Heslo"><br><br>
+                
+            <button type="submit">Odeslat</button>
+        </form>
+    </main>
+    {{>footer}}
+</body>
+</html>

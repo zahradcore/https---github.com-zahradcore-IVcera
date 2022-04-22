@@ -1,0 +1,17 @@
+Projekt: Aplikace na tématické články
+
+Účel: 
+Tato aplikace slouží k vytváření článků. Uživatel může články nejen přidat, ale i upravovat či mazat. CRUD operace může uživatel provádět jen na článcích, které sám napsal.
+Na hlavní stránce se zobrazují články všech uživatelů (články jsou ke čtení přístupné i bez přihlášení). Uživatel se může zaregistrovat, zobrazit si svůj profil a následně si i upravit email.
+
+Použité technologie/knihovny:
+-node.js
+-mongoose
+-mongoDB
+-bcrypt
+
+Licence:
+Toto je studentský projekt. 
+
+Github:
+

@@ -1,0 +1,34 @@
+GET http://localhost:3000/articles
+###
+
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "username": "tomm",
+    "email": "tomm@uhk.cz",
+    "password":"1234567"
+
+}
+###
+
+GET http://localhost:3000/home
+###
+POST http://localhost:3000/articles/create
+Content-Type: application/json
+
+{
+    "title": "Novy clanek",
+    "text": "snad to funguje",
+    "author":"62529ae2833ae3fae60fbbf5"
+    
+}
+###
+POST  http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "username": "tomm",
+    "password":"1234567"
+
+}

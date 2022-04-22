@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../styles/style.css">
+    <title>iVcera</title>
+</head>
+<body>
+    {{>header}}
+
+    <main>
+        <h2>Smazani clanku</h2>
+        <div>
+           
+            <p>Titulek: {{article.title}}</p>
+            <p>Obsah: {{article.text}}</p>
+
+        </div>
+        <form action="{{article.url}}/delete?_method=DELETE" method="post">
+        <p>Chcete tento clanek smazat?</p>
+        <input type="hidden" id="form-control" name="id" required="true" value="{{article._id}}">
+        <button type="submit">Smazat</button>
+        </form>
+    </main>
+    {{>footer}}
+</body>
+</html>
